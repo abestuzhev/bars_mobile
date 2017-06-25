@@ -1,0 +1,127 @@
+.clevered.alice .jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.clevered.alice .jspPane
+{
+	position: absolute;
+
+}
+
+.clevered.alice .jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 14px;
+	height: 100%;
+	background: #fff;
+}
+
+.clevered.alice .jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.clevered.alice .jspVerticalBar *,
+.clevered.alice .jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.clevered.alice .jspCap
+{
+	display: none;
+}
+
+.clevered.alice .jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.clevered.alice .jspTrack
+{
+	background: #d4d4d4;
+	width: 2px;
+	left: 6px;
+	top: 0;
+	position: relative;
+}
+
+.clevered.alice .jspDrag
+{
+	background: #e6e4e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #EEEEEE 0%, #E5E5E5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e4e5), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #EEEEEE 0%,#E5E5E5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #EEEEEE 0%,#E5E5E5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #EEEEEE 0%,#E5E5E5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #EEEEEE 0%,#E5E5E5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e4e5', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+	position: relative;
+	border-radius: 2px;
+	border: 1px solid #E0E0E0;
+	top: 0;
+	left: -6px;
+	cursor: pointer;
+	width: 14px;
+}
+
+.clevered.alice .jspHorizontalBar .jspTrack,
+.clevered.alice .jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.clevered.alice .jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.clevered.alice .jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.clevered.alice .jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.clevered.alice .jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.clevered.alice .jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.clevered.alice .jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

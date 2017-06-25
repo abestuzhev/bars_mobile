@@ -1,0 +1,9 @@
+/*Обернуть в header .header-search-submit input в label для позиционирования иконки
+ссылка для маленькой иконки .header-cart-box /personal/basket/
+обавление кнопки items_mobile-filter catalog-2.html
+одбавление фона для фильтра mobile_filter-bg
+
+изменение местами блоу=ков в карточке товара
+.item-single-preview добавляем float: left; width: 50%;
+.item-single-card добавляем float:left;
+*/

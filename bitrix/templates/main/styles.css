@@ -1,0 +1,395 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+body,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+tfoot,
+thead,
+th,
+tr,
+tdvideo,
+tt,
+u,
+ul,
+var {
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+table,
+td {
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
+img {
+    vertical-align: top;
+}
+embed {
+    vertical-align: top;
+}
+.hidden {
+    display: none !important;
+}
+.invisible {
+    visibility: hidden !important;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.align-center {
+    text-align: center;
+}
+@font-face {
+    font-family: 'Designosaur';
+    src: url('/assets/fonts/designosaur/20b76920b181bc400c45166473687ed6/6037e4c89328edec19c24ceabd676f2a/DesignosaurItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Designosaur';
+    src: url('/assets/fonts/designosaur/20b76920b181bc400c45166473687ed6/c8d2cf5ba00a7cc417f1122bacf3d741/DesignosaurRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Designosaur';
+    src: url('/assets/fonts/designosaur/20b76920b181bc400c45166473687ed6/4c9a36845bf113239c75f481aec2d8f6/DesignosaurItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Designosaur';
+    src: url('/assets/fonts/designosaur/20b76920b181bc400c45166473687ed6/1ba59ff115f5fc12d81c5cb8fe44ef6c/DesignosaurRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+button,
+input[type="text"],
+input[type="button"],
+label,
+select,
+textarea {
+    font: 12px/18px Verdana, sans-serif;
+    color: #111;
+    outline: none;
+    -webkit-appearance: none;
+}
+body {
+    color: #111;
+    font: 12px/18px Verdana, sans-serif;
+    background: #f7f7f7;
+    min-width: 1020px;
+}
+img {
+    vertical-align: top;
+}
+img.adaptive-image {
+    width: 100%;
+    height: auto;
+}
+.adaptive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.adaptive-video iframe,
+.adaptive-video object,
+.adaptive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: 12px/18px Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #333;
+    margin-bottom: 18px;
+}
+h1 {
+    font-size: 22px;
+    line-height: 26px;
+}
+h2 {
+    font-size: 17px;
+    line-height: 20px;
+}
+h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+h4 {
+    font-size: 14px;
+}
+b,
+strong {
+    font-weight: bold;
+}
+i,
+em {
+    font-style: italic;
+}
+p,
+ul,
+ol {
+    margin-bottom: 18px;
+}
+li {
+    line-height: 18px;
+}
+ul li {
+    background: transparent url(img/bullet.png) no-repeat 0 8px;
+    padding-left: 8px;
+}
+ol {
+    padding: 0;
+    margin-left: 20px;
+}
+a {
+    color: #002649;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+ul.no-style,
+ul.no-style li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 4px 0 0 0;
+}
+.dashed {
+    text-decoration: none;
+    background: transparent url(img/border-dashed-red.png) repeat-x 0 20px;
+}
+.dashed.white {
+    background-image: url(img/border-dashed-white.png);
+}
+.dashed.black {
+    background-image: url(img/border-dashed-black.png);
+}
+.dashed.grey {
+    background-image: url(img/border-dashed-grey.png);
+}
+.dashed:hover {
+    background: none;
+}
+
+
+.bx-registration-table input {
+    width: 170px;
+    -webkit-appearance: textfield;
+}
+
+.soc_icon {
+    background-image: url(/bitrix/templates/main/img/soc_sprite.png);
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+}
+.soc_icon.in {
+    background-position: 0px 63px;
+}
+.soc_icon.vk {
+    background-position: -43px 63px;
+}
+.soc_icon.you {
+    background-position: -86px 63px;
+}
+
+.social_buttons {
+    /*
+    position: relative;
+    float: right;
+    margin-right: 92px;
+    bottom: 5px;
+    */
+    position: relative;
+    /* float: right; */
+    /* right: 0; */
+    /* margin-right: 92px; */
+    bottom: -7px;
+    z-index: 10000;
+    display: inline-block;
+    float: left;
+    margin-left: -22px;
+}
+
+.social_buttons span{
+    display: inline-block;
+}
+
+.social-ico-head
+{
+    float:right;
+    padding-top: 14px;
+}
+
+.social-ico-head .link
+{
+    float: right;
+    margin-left: 4px;
+}
+.social-ico-head .vk
+{
+    background: url("img/vk.png");
+    width: 25px;
+    height: 25px;
+}
+
+.social-ico-head .instagram
+{
+    background: url("img/instagram.png");
+    width: 25px;
+    height: 25px;
+}
+
+.social-ico-head .youtube
+{
+    background: url("img/youtube.png");
+    width: 25px;
+    height: 25px;
+}
+
+.social-ico-head .vk:active
+{
+    background: url("img/vkPress.png");
+}
+
+.social-ico-head .instagram:active
+{
+    background: url("img/instagramPress.png");
+}
+
+.social-ico-head .youtube:active
+{
+    background: url("img/youtubePress.png");
+}
+
+.header-top-right .ico-after-auth
+{
+    width: 20%;
+}
+/* End */

@@ -1,0 +1,7 @@
+@media \0screen {
+
+	.banners img {
+		width: auto; /* для IE8 */
+	}
+
+}

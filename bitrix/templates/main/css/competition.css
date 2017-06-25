@@ -1,0 +1,9 @@
+
+
+.competition .form-date:before {
+    left: 240px !important;
+}
+.competition h2{
+    font-family: Verdana;
+    padding: 23px 20px 18px 20px !important;
+}

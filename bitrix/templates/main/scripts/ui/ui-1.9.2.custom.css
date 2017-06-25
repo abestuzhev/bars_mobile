@@ -1,0 +1,124 @@
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}.ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+.ui-slider { position: relative; text-align: left; }
+
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+.ui-slider-horizontal {
+	height: 9px;
+	background: #a9b3b7;
+	border: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.8);
+	   -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.8);
+	        box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.8);
+}
+.ui-slider-horizontal .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 21px;
+	height: 21px;
+	background: url(images/ui-slider-handle.png) 0 0 no-repeat;
+	cursor: pointer;
+	top: -8px;
+	margin-left: -8px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: -1px;
+	height: 10px;
+	background: #147db8 url(images/ui-slider-horizontal.jpg) 0 0 repeat-x;
+}
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+/*spinenr*/
+.ui-spinner-button {
+	width: 10px;
+	height: 11px;
+	display: block;
+	background: url(images/spinner_button.png) 0 0 no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+}
+.ui-spinner-up {
+	background-position: 0 0;
+	right: 3px;
+}
+
+.ui-spinner-down {
+	background-position: 0 -11px;
+	left: 3px;
+}
+
+.ui-spinner-input {
+	margin-top: 2px;
+}
+
+.ui-spinner-wrapper {
+	width: 67px;
+	height: 26px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px #000;
+	-moz-box-shadow: 0 1px 1px #000;
+	box-shadow: 0 1px 1px #000;
+	border: solid 1px #d3d3d3;
+	background-image: -webkit-linear-gradient(bottom, #dfdfdf, #f7f7f7);
+	background-image: -moz-linear-gradient(bottom, #dfdfdf, #f7f7f7);
+	background-image: -o-linear-gradient(bottom, #dfdfdf, #f7f7f7);
+	background-image: linear-gradient(to top, #dfdfdf, #f7f7f7);
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+}

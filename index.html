@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cписок страниц Барс</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    html { min-height: 100%; }
+
+    body {
+        color: #292929;
+        padding: 0;
+        margin: 0;
+        min-height: 100%;
+        /*background: url('bitrix/templates/mediartstore/images/bg.jpg') repeat 0 0;*/
+        background-size: cover;
+        font: 16px/32px 'Roboto', sans-serif;
+    }
+
+    h1 {
+        color: #292929;
+        margin: 0 0 20px;
+        padding-bottom: 10px;
+        font-size: 28px;
+        border-bottom: 1px solid #292929;
+        font-weight: 700;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    ol {
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 25px;
+      color: #292929;
+      font-size: 1em;
+      margin: 0;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .corrected::before {
+      content: '⌘';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #292929;
+    }
+
+    .disable {
+      opacity: .6;
+      cursor: default;
+    }
+
+    .disable:hover {
+      color: #292929;
+      opacity: .6;
+      text-decoration: none;
+    }
+
+
+    section {
+        margin: 50px auto;
+        max-width: 500px;
+        /*background: rgba(255, 255, 255, .3);*/
+        background-color: #fff;
+        padding: 40px 60px;
+        /*padding-left: 0;*/
+        border-radius: 6px;
+    }
+
+    @media screen and (max-width: 700px) {
+      section {
+        width: 100%;
+        padding: 10px;
+        max-width: none;
+      }
+
+      .item {
+        padding: 0;
+      }
+
+    body {
+        background: none;
+    }
+    }
+
+    a {
+        text-decoration: none;
+        color: #292929;
+        font-weight: 500;
+    }
+
+    a:hover { color: #ffbd00; text-decoration: underline;}
+</style>
+</head>
+
+<body>
+
+<section>
+
+    <h1>Барс</h1>
+
+    <ol>
+        <li class="item"><a target="_blank" href="home.html">Главная</a></li>
+        <li class="item"><a target="_blank" href="catalog-1.html">Каталог 1-го уровня</a></li>
+        <li class="item"><a target="_blank" href="catalog-2.html">Каталог 2-го уровня</a></li>
+        <li class="item"><a target="_blank" href="product-card.html">Карточка товара</a></li>
+        <li class="item"><a target="_blank" href="shops.html">Магазины</a></li>
+        <li class="item"><a target="_blank" href="service.html">Сервис</a></li>
+        <li class="item"><a target="_blank" href="articles.html">Статьи и советы</a></li>
+        <li class="item"><a target="_blank" href="feedback.html">Отправить сообщение</a></li>
+    </ol>
+  <!--<a href="components.html">Компоненты</a>-->
+</section>
+
+</body>
+</html>
