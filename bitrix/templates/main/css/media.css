@@ -258,26 +258,57 @@
     }
 
     .side-filter {
-        position: absolute;
-        z-index: 9999;
-        top: -18px;
-        left: -250px;
-        background-color: #fff;
-        display: none;
+        background-color: #e7e7e7;
+        visibility: hidden;
+        -webkit-transform: translateX(-250px);
+        -moz-transform: translateX(-250px);
+        -ms-transform: translateX(-250px);
+        -o-transform: translateX(-250px);
+        transform: translateX(-250px);
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
     }
 
     .side-filter.filter-active {
-        display: block;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        height: 100%;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
     }
 
     .mobile_filter-bg.filter-active {
-        width: 100%;
-        height: 100%;
-        position: absolute;
+        position: fixed;
+        z-index: 999;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         background-color: rgba(0,0,0,.4);
-        display: block;
+        visibility: visible;
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+
+    .header {
+        z-index: 0;
     }
 
     .side-filter .sidebar-block {
@@ -289,6 +320,11 @@
     .breadcrumbs-list li a span {
         font-size: 13px;
     }
+
+    /*.mobile-canvas {*/
+        /*overflow: hidden;*/
+        /*margin-right: -17px;*/
+    /*}*/
 
 }
 
@@ -358,11 +394,6 @@
     .header-cart {
         right: 66px;
         top: 2px;
-    }
-
-    .side-filter {
-        top: 112px;
-        left: 0;
     }
 
     .sidebar-left {
@@ -711,11 +742,6 @@
         left: 0;
     }
 
-    .side-filter.filter-active {
-        top: 99px;
-        left: 0;
-    }
-
     .show-more a {
         padding-left: 25px;
     }
@@ -760,6 +786,11 @@
     }
 }
 
+@media all and (max-height:700px) {
+    .side-filter.filter-active {
+        overflow-y: scroll;
+    }
+}
 @media all and (max-width:450px) {
 
     .shops-search {
