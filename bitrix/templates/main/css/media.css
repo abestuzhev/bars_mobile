@@ -840,6 +840,11 @@
     .header {
         margin-bottom: 30px;
     }
+
+    /*new 28.06.2017*/
+    .sidebar-left {
+        top: 104px;
+    }
 }
 
 @media all and (max-height:700px) {
