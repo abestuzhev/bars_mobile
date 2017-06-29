@@ -1095,10 +1095,10 @@ body.small .header-navigation-list-sub.catalog-nav {
   overflow: hidden;
 }
 .slider-list {
-  width: 2400px !important;
-  height: 327px !important;
-  left: 50% !important;
-  margin-left: -1200px !important;
+  width: 2400px;
+  height: 327px;
+  left: 50%;
+  margin-left: -1200px;
 }
 .slider-shadow {
   position: absolute;

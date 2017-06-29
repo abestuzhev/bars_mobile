@@ -948,3 +948,75 @@
         width: 100%;
     }
 }
+
+/*мобильные блоки левой колонки*/
+.mobile_sidebar-left {
+    display: none;
+}
+.sidebar-block_row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width:780px){
+    .mobile_sidebar-left {
+        display: block;
+    }
+    .sidebar-left .sidebar-block:not(:first-child) {
+        display: none;
+    }
+}
+
+
+/*slider*/
+@media screen and (min-width:1600px){
+    .slider-list {
+        width: 2400px;
+        height: auto;
+        left: 50%;
+        margin-left: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width:1600px){
+    .slider-list {
+        width: 2000px;
+        height: auto;
+        left: 50%;
+        margin-left: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .nivo-controlNav {
+        min-width: 0;
+        max-width: 100%;
+        z-index: 8;
+    }
+}
+
+@media screen and (max-width:800px){
+    .slider-list {
+        width: 1600px;
+    }
+}
+
+@media screen and (max-width:530px){
+    .slider-list {
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .slider-list {
+        width: 960px;
+    }
+}
