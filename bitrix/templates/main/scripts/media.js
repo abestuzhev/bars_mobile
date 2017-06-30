@@ -1,6 +1,12 @@
 $(document).ready(function() {
-    $('.header-top_mobile-menu').on('click', function(e){
-        $('.sidebar-left').toggle();
+    // $('.header-top_mobile-menu').on('click', function(e){
+    //     $('.sidebar-left').toggle();
+    //     e.preventDefault();
+    // });
+    //new
+    $('.mobile_navigation').on('click', function(e){
+        $('.sidebar-navigation').toggle();
+        $(this).toggleClass('mobile_navigation--active');
         e.preventDefault();
     });
 
