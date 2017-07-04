@@ -2048,7 +2048,7 @@ body.small .subcategories .items-list.resize li.item:first-child {
   padding-top: 0;
 }
 
-.sidebar-navigation-list > li {
+.sidebar-navigation-list > li > a {
   background: #f0f0f0; /* Old browsers */
   background: -moz-linear-gradient(top, #f0f0f0 0%, #e9e9e9 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#e9e9e9)); /* Chrome,Safari4+ */
@@ -2061,40 +2061,13 @@ body.small .subcategories .items-list.resize li.item:first-child {
   -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.3);
   box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.3);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  padding-left: 21px;
   color: #0d0d0d;
   font: 16px Verdana, sans-serif;
   text-decoration: none;
-  position: relative;
 }
 
-.sidebar-navigation-list > li::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  width: 10px;
-  height: 5px;
-  background: url(img/sidebar-navigation-bullet-close.png) no-repeat 95% 50%;
-}
-
-.sidebar-navigation-list > li.super-active::after {
-  content: '';
-  top: 20px;
-}
-
-.sidebar-navigation-list > li > a {
-  display: inline-block;
-  padding-left: 21px;
-  text-decoration: none;
-}
-
-.sidebar-navigation-list li.active ul {
-  padding-left: 18px;
-  margin-left: 3px;
-  background-color: #f7f7f7;
-}
-
-.sidebar-navigation-list > li.super-active {
+.sidebar-navigation-list > li.super-active > a {
   background: #fbdb5e; /* Old browsers */
   background: -moz-linear-gradient(top, #fbdb5e 0%, #f2c52d 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbdb5e), color-stop(100%,#f2c52d)); /* Chrome,Safari4+ */
@@ -2110,12 +2083,12 @@ body.small .subcategories .items-list.resize li.item:first-child {
 
 .sidebar-navigation-list > li > a span {
   padding: 5px 28px 5px 0;
-  /*background: url(img/sidebar-navigation-bullet-close.png) no-repeat 95% 50%;*/
+  background: url(/bitrix/templates/main_adaptive/img/sidebar-navigation-bullet-close.png) no-repeat 95% 50%;
 }
 
 .sidebar-navigation-list > li.super-active > a span {
   padding: 5px 28px 5px 0;
-  /*background: url(img/sidebar-navigation-bullet-open.png) no-repeat 95% 50%;*/
+  background: url(/bitrix/templates/main_adaptive/img/sidebar-navigation-bullet-open.png) no-repeat 95% 50%;
 }
 
 .sidebar-navigation-list ul {
@@ -2132,7 +2105,7 @@ body.small .subcategories .items-list.resize li.item:first-child {
   text-decoration: none;
 }
 .sidebar-navigation-list ul > li > a {
-  background: transparent url(img/sidebar-navigation-subitem-bullet.png) no-repeat 0 6px;
+  background: transparent url(/bitrix/templates/main_adaptive/img/sidebar-navigation-subitem-bullet.png) no-repeat 0 6px;
   text-shadow: none;
   padding-left: 8px;
   color: #002649;

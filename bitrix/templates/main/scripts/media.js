@@ -24,4 +24,8 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.-tree-node').on('click', function(e){
+        console.log('клик рабоатет');
+    });
+
 });
