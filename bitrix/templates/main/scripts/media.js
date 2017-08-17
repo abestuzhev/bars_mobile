@@ -29,10 +29,10 @@ $(document).ready(function () {
     });
 
     /*3й уровень меню*/
-    $('.menu-2-level').on('click', function(e){
-        $(this).toggleClass('sub-panel--active');
+    $('.menu-2-level .-tree-trigger').on('click', function(e){
+        $(this).parents('.menu-2-level ').toggleClass('sub-panel--active');
+        $(this).parents('.menu-2-level ').siblings('.menu-2-level').removeClass('sub-panel--active');
         e.preventDefault();
-        $(this).siblings('.menu-2-level').removeClass('sub-panel--active');
     });
 });
 /* End */
