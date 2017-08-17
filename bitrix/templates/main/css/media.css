@@ -1360,7 +1360,7 @@
 }
 
 .sub-panel--active .tree-sub-panel {
-    display: block !important;
+    display: none !important;
 }
 
 .sub-panel--active .sidebar-link_layout > .-tree-trigger::before {
