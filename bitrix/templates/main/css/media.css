@@ -1371,3 +1371,38 @@
 .sub-panel--active .tree-sub-panel {
     display: block !important;
 }
+
+
+/*------------------------------------------*/
+/*стили для смены баннера со стационара на мобильную версию*/
+/*------------------------------------------*/
+
+.mobile-slider {
+    /*height: 630px;*/
+    display: none !important;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.mobile-slider img{
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: transparent url(../img/slider-control-buttons.png) no-repeat 0 -22px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-position: 0 0;
+}
+
+@media screen and (max-width: 1024px){
+    .slider {
+        display: none;
+    }
+
+    .mobile-slider {
+        display: block !important;
+    }
+}

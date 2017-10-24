@@ -35,5 +35,17 @@ $(document).ready(function () {
         //$(this).parents('.menu-2-level ').siblings('.menu-2-level').removeClass('sub-panel--active');
         e.preventDefault();
     });
+
+
+
+    /*------------------------------------------*/
+    /*мобильный слайдер*/
+    /*------------------------------------------*/
+
+    $(".mobile-slider").owlCarousel({
+        items: 1,
+        loop: true
+    });
+
 });
 /* End */
