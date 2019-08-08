@@ -41,9 +41,14 @@
 }
 
 .subcategories .items-list.display-grid li .item-useful .item-price {
-
+padding: 14px 13px 14px 10px;
     /* height: auto; */
 }
+
+.subcategories .items-list.display-grid .item-useful-d .item-buy {
+    position: absolute;
+    bottom: 8px;
+  }
 
 .c-currency-symbol.rub {
     font-family: pt_sans_rub;
