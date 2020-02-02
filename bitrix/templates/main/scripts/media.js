@@ -24,4 +24,28 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    var windowWidth = $(window).width();
+
+
+    var renameAuthorisation = function (text){
+        $('.header-authorisation-button span').text(text);
+    };
+
+    if(windowWidth < 480) {
+        renameAuthorisation('ЛК');
+    }else {
+        renameAuthorisation('Вход/Регистрация');
+    }
+
+    $(window).resize(function(){
+        console.log('windowWidth: ' + $(window).width());
+        if($(window).width() < 480) {
+            renameAuthorisation('ЛК');
+        }else {
+            renameAuthorisation('Вход/Регистрация');
+        }
+    });
+
+
+
 });
